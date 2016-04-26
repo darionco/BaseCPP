@@ -29,7 +29,7 @@ bin/
 *.app
 
 # Ignore Visual Studio Code
-.vscode
+.vscode/.*
 
 # OSX
 .DS_Store
