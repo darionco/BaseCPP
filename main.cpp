@@ -9,3 +9,8 @@ int main()
     puts(Julia_Segura_Aguirre);
     return 0;
 }
+
+int addTwoIntegers(int one, int two)
+{
+	return one + two;
+}
