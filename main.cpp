@@ -7,5 +7,8 @@ int main()
     gets(Julia_Segura_Aguirre);
     printf("You typed: ");
     puts(Julia_Segura_Aguirre);
+    char Julia_Segura_Aguirre[99];
+   
+
     return 0;
 }
