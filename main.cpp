@@ -5,9 +5,10 @@ int main()
     char Julia_Segura_Aguirre[100];
     printf("What is your date of birth?\n");
     gets(Julia_Segura_Aguirre);
-    printf("You typed: ");
+    char Julia_Segura_Aguirre[100]
+    printf("Great!You typed: n/ Is that correct?");
     puts(Julia_Segura_Aguirre);
-    char Julia_Segura_Aguirre[99];
+  
    
 
     return 0;
