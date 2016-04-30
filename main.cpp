@@ -1,20 +1,35 @@
 #include <stdio.h>
 
-int main()
+int addTwoIntegers(int two, int one)
 {
-    char Julia_Segura_Aguirre[100];
-    printf("What is your date of birth?\n");
-    gets(Julia_Segura_Aguirre);
-  
-    printf("You typed: ");
-    puts(Julia_Segura_Aguirre);
-  
-   
+	return one + two + one;
+}
 
+int daddyIsAwesome(int paco, int peco, int chico)
+{
+    int a = paco;
+    int b = chico;
+    int c = peco;
+    
+    return a + b + c;
+}
+
+int juliaIsAlsoAwesome(int dario, int selene)
+{
+   return dario - selene;
+}
+
+int main()
+{   
+    int julia, dario;
+    printf("Type 2 Numbers\n");
+    printf("1: ");
+    scanf("%d", &dario);
+    printf("2: ");
+    scanf("%d", &julia);
+    int Result = dario + julia;
+    printf("Addition: %d\n", Result);
     return 0;
 }
 
-int addTwoIntegers(int one, int two)
-{
-	return one + two;
-}
+
