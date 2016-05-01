@@ -23,13 +23,12 @@ int main()
 {   
     int julia, dario;
     printf("Type 2 Numbers\n");
-    printf("1: ");
+    printf("1st Number Is: ");
     scanf("%d", &dario);
-    printf("2: ");
+    printf("2nd Number Is: ");
     scanf("%d", &julia);
-    int Result = dario + julia;
-    printf("Addition: %d\n", Result);
+    int Result = dario - julia;
+    printf("This Is Subtraction. It Equals To %d\n", Result);
     return 0;
 }
-
 
