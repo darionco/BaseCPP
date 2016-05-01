@@ -21,14 +21,14 @@ int juliaIsAlsoAwesome(int dario, int selene)
 
 int main()
 {   
-    int julia, dario;
+    int c, julia, dario;
     printf("Type 2 Numbers\n");
     printf("1st Number Is: ");
     scanf("%d", &dario);
     printf("2nd Number Is: ");
     scanf("%d", &julia);
-    int Result = dario - julia;
-    printf("This Is Subtraction. It Equals To %d\n", Result);
+    c=julia*dario;
+    printf("This Is Multiplacation. It Equals To %d\n", c);
     return 0;
 }
 
