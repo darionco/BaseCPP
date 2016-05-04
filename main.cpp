@@ -40,7 +40,37 @@ int main()
     scanf("%d", &i);
     printf("The 2nd Number Is ");
     scanf("%d", &h);
-    Result=i-h;
+    Result = i - h;
     printf("Your 2 Numbers Equals To %d\n", Result);
+    
+    printf("Hi Daddy, This Will Be My Bonus Homework!!!\n");
+    int v, t, l;
+    printf("For this i will write them myselfs (to make it harder)\n");
+    v = 16;
+    t = 80;
+    l = 5;
+    Result = v + t + l;
+    printf("16 + 80 + 5 = %d\n", Result);
+    printf("The last one was about Addition. This one will be about Division!\n");
+    int k, q, z;
+    k = 1;
+    q = 63;
+    z = 6;
+    Result = q / k / z;
+    printf("63 Divided by 1 Divided by 6 = %d\n", Result);
+    int y, g, x;
+    printf("This one is going to be Multiplacation!\n");
+    y = 10;
+    g = 1;
+    x = 6;
+    Result = 10 * 6 * 1;
+    printf("10 X 6 X 1 = %d\n", Result);
+    int u, j, m;
+    printf("This last one will be Subtraction!\n");
+    u = 50;
+    j = 17;
+    m = 31;
+    Result = u - m - j;
+    printf("50 - 31 - 17 = %d\n", Result);
     return 0;
 }
