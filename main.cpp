@@ -4,6 +4,18 @@ int add2integers(int z, int space)
 {
     return space - z;
 }
+int write4life(int weee, int deee)
+{
+    return weee + deee;
+}
+int homweork(int pop, int loopy)
+{
+    return pop * loopy;
+}
+int hoolahoop(int hoola, int hoop)
+{
+    return hoola / hoop;
+}
 
 int main()
 {
@@ -13,7 +25,7 @@ int main()
     scanf("%d", &programing);
     printf("The 2nd Number Is ");
     scanf("%d", &homework);
-    int Result = programing + homework;
+    int Result = write4life(programing, homework);
     printf("Your 2 Numbers Equals To %d\n", Result);
       
     int a, b, c;
@@ -22,16 +34,16 @@ int main()
     scanf("%d", &a);
     printf("The 2nd Number Is ");
     scanf("%d", &b);
-    c = a * b;
+    c = homweork(a, b);
     printf("Your 2 Numbers Equals To %d\n", c);
    
-    int p, s, o;    
+    int p, s, o;
     printf("I Also Want To Do Division. Please Type 2 Numbers\n");
     printf("The 1st Number Is ");
     scanf("%d", &p);
     printf("The 2nd Number Is ");
     scanf("%d", &s);
-    o = p / s;
+    o = hoolahoop(p, s);
     printf("Your 2 Numbers Equals To %d\n", o);
     
     int i, h;
