@@ -16,6 +16,10 @@ int hoolahoop(int hoola, int hoop)
 {
     return hoola / hoop;
 }
+int myfavesong(int fave, int soon)
+{
+    return fave - soon;
+}
 
 int main()
 {
@@ -82,7 +86,7 @@ int main()
     u = 50;
     j = 17;
     m = 31;
-    Result = u - m - j;
+    Result = myfavesong(u, j);
     printf("50 - 31 - 17 = %d\n", Result);
     return 0;
 }
