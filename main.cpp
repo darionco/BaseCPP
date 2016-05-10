@@ -33,9 +33,10 @@ int  superDad(int mathilda, int freinds)
 
 
 int main()
-{
-    int mathilda = 63;
-    int freinds = 7;
+{   
+    superDad(int mathilda, int freinds);
+    mathilda = 63;
+    freinds = 7;
     // int programing, homework;
     // printf("I am going to do Addition. Please type 2 numbers.\n");
     // printf("The 1st Number Is ");
