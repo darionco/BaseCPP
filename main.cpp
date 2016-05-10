@@ -36,7 +36,8 @@ int  superDad(int mathilda, int freinds)
 
 
 int main()
-{   
+{  
+    superDad(63, 7); 
     // int programing, homework;
     // printf("I am going to do Addition. Please type 2 numbers.\n");
     // printf("The 1st Number Is ");
@@ -110,6 +111,5 @@ int main()
     randomname2 = 2;
     int Result = Newfunction(selene, randomname, randomname2);
     printf("The awnser is: %d\n", Result);
-    superDad(63, 9);
     return 0;
 }
