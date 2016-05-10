@@ -29,15 +29,18 @@ int  superDad(int mathilda, int freinds)
      int hugs; //Experament
      hugs = mathilda / freinds;
      int ummmmm;
-     ummmmm = superDad(63, 7);
-     printf("The Awnser Is %d\n", ummmmm);
-     return hugs; 
+     mathilda = 63;
+     freinds = 7;
+     ummmmm = superDad(mathilda, freinds);
+     return ummmmm; 
 }
 
 
 int main()
 {  
-    superDad(63, 7); 
+    int superDad(int mathilda, int freinds); //NOT WORKING!!!
+    int ummmmm;
+    printf("The Awnser Is %d\n", ummmmm);
     // int programing, homework;
     // printf("I am going to do Addition. Please type 2 numbers.\n");
     // printf("The 1st Number Is ");
@@ -105,11 +108,11 @@ int main()
     // printf("50 - 31 - 17 = %d\n", Result);
     
     
-    int selene, randomname, randomname2;
-    selene = 7;
-    randomname = 12;
-    randomname2 = 2;
-    int Result = Newfunction(selene, randomname, randomname2);
-    printf("The awnser is: %d\n", Result);
+    // int selene, randomname, randomname2;
+    // selene = 7;
+    // randomname = 12;
+    // randomname2 = 2;
+    // int Result = Newfunction(selene, randomname, randomname2);
+    // printf("The awnser is: %d\n", Result);
     return 0;
 }
