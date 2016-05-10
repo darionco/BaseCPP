@@ -26,21 +26,16 @@ int Newfunction(int aliSyee, int daRio, int julIa)
 }
 int  superDad(int mathilda, int freinds)
 {    
-     int hugs; //Experament
-     hugs = mathilda / freinds;
-     int ummmmm;
-     mathilda = 63;
-     freinds = 7;
-     ummmmm = superDad(mathilda, freinds);
-     return ummmmm; 
+     int Result = mathilda / freinds;   
+     printf("The Anwser Is %d\n", Result);
+     return mathilda / freinds;
 }
 
 
 int main()
-{  
-    int superDad(int mathilda, int freinds); //NOT WORKING!!!
-    int ummmmm;
-    printf("The Awnser Is %d\n", ummmmm);
+{
+    int mathilda = 63;
+    int freinds = 7;
     // int programing, homework;
     // printf("I am going to do Addition. Please type 2 numbers.\n");
     // printf("The 1st Number Is ");
