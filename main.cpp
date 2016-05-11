@@ -24,26 +24,23 @@ int Newfunction(int aliSyee, int daRio, int julIa)
 {
     return (aliSyee + daRio) * julIa;
 }
-    int superDad(int mathilda, int freinds)
-{     
+
+void superDad()
+{   
+    int mathilda, freinds;    
     printf("this is Multiplacation. type 2 numbers.\n");
     printf("1st Number: ");
     scanf("%d", &mathilda);
     printf("2nd Number: ");
     scanf("%d", &freinds);
-    int Result = superDad(mathilda, freinds);
-     int e = superDad( mathilda, freinds );
+    int Result = myfavesong(mathilda, freinds);
     printf("this will Multiply. It Equals to: %d\n", Result);
-    return mathilda * freinds;
 }
 
 
 int main()
 {   
-    int fave, soon;
-    superDad(fave, soon);
-    fave * soon;
-    superDad + add2integers =
+    superDad();
     //Testing
     // int programing, homework;
     // printf("I am going to do Addition. Please type 2 numbers.\n");
