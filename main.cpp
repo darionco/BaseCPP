@@ -18,7 +18,7 @@ int hoolahoop(int hoola, int hoop)
 }
 int myfavesong(int fave, int soon)
 {
-    return fave - soon;
+    return fave * soon;
 }
 int Newfunction(int aliSyee, int daRio, int julIa)
 {
@@ -26,12 +26,13 @@ int Newfunction(int aliSyee, int daRio, int julIa)
 }
     int superDad(int mathilda, int freinds)
 {     
-    printf("this is Multiplacation. type 2 numbers.");
+    printf("this is Multiplacation. type 2 numbers.\n");
     printf("1st Number: ");
     scanf("%d", &mathilda);
     printf("2nd Number: ");
     scanf("%d", &freinds);
     int Result = superDad(mathilda, freinds);
+     int e = superDad( mathilda, freinds );
     printf("this will Multiply. It Equals to: %d\n", Result);
     return mathilda * freinds;
 }
@@ -39,15 +40,11 @@ int Newfunction(int aliSyee, int daRio, int julIa)
 
 int main()
 {   
-    int mathilda, freinds; 
-    printf("this is Multiplacation. type 2 numbers.");
-    printf("1st Number: ");
-    scanf("%d", &mathilda);
-    printf("2nd Number: ");
-    scanf("%d", &freinds);
-    int Result = superDad(mathilda, freinds);
-     int e = superDad( mathilda, freinds );
-    printf("this will Multiply. It Equals to: %d\n", Result); //Sample!
+    int fave, soon;
+    superDad(fave, soon);
+    fave * soon;
+    superDad + add2integers =
+    //Testing
     // int programing, homework;
     // printf("I am going to do Addition. Please type 2 numbers.\n");
     // printf("The 1st Number Is ");
