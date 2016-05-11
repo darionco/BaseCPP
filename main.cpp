@@ -24,19 +24,22 @@ int Newfunction(int aliSyee, int daRio, int julIa)
 {
     return (aliSyee + daRio) * julIa;
 }
-int  superDad(int mathilda, int freinds)
-{    
-     int Result = mathilda / freinds;   
-     printf("The Anwser Is %d\n", Result);
-     return mathilda / freinds;
+    int superDad(int mathilda, int freinds)
+{   
+    return mathilda * freinds;
 }
 
 
 int main()
 {   
-    superDad(int mathilda, int freinds);
-    mathilda = 63;
-    freinds = 7;
+     int programing, homework;  
+    printf("this is Multiplacation. type 2 numbers.\n");
+    printf("1st Number: ");
+    scanf("%d", &programing);
+    printf("2nd Number: ");
+    scanf("%d", &homework);
+    int Result = superDad(programing, homework);
+    printf("this will Multiply. It Equals to: %d\n", Result);
     // int programing, homework;
     // printf("I am going to do Addition. Please type 2 numbers.\n");
     // printf("The 1st Number Is ");
