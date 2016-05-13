@@ -2,6 +2,27 @@
 #include <stdlib.h>
 #include <time.h> 
 
+int importantmemorys(const char *hardness, int many, int *memory)
+{   
+    int more;
+    printf("Please type %s \n", hardness);
+    for (int c = 100; c <many; ++c)
+    {
+        printf("-> ");
+        scanf("%d", &more);
+    }
+    return more;
+}
+
+char askforfarts(const char *fart)
+{   
+    int mare;
+    printf("please type %s:\n", fart);
+    printf("-> ");
+    scanf("%d", &mare);
+    return mare;
+}
+
 int askForNumber(const char *message)
 {
     int number;
@@ -30,12 +51,18 @@ int main()
 {
     srand (time(NULL)); // Do not worry about this, but don't delete it
     int age = askForNumber("how many siblings you have");
+    int funny = askforfarts("how many farts you have a day");
     
-    int favoriteNumbers[4];
+    int importantmoments [2];
+    int more = importantmemorys("your age when 3 special moments happend", 3, importantmoments);
+    
+    int favoriteNumbers[3];
     askForManyNumbers("your 4 favorite numbers", 4, favoriteNumbers);
     
-    printf("Your age is: %d\n", age);
-    printf("Your 4 favorite numbers are %d %d %d %d\n", favoriteNumbers[0], favoriteNumbers[1], favoriteNumbers[2], favoriteNumbers[3]);
+    printf("You have %d siblings\n", age);
+    printf("You have %d farts a day\n", funny);
+    printf("Your age when 3 special moments happend is %d, %d and %d\n", importantmoments[0], importantmoments[1], importantmoments[2]);
+    printf("Your 4 favorite numbers are %d, %d, %d and %d\n", favoriteNumbers[0], favoriteNumbers[1], favoriteNumbers[2], favoriteNumbers[3]);
     
     int added = favoriteNumbers[0] + favoriteNumbers[1] + favoriteNumbers[2] + favoriteNumbers[3];
     int substracted = favoriteNumbers[0] - favoriteNumbers[1] - favoriteNumbers[2] - favoriteNumbers[3];
