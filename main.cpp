@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include <time.h> 
 
+int farts_a_day( int farting )
+{
+    printf ("How many times do you fart in a day?\n-> ");
+    scanf ("%d", farting);
+   printf (" This is how many times you fart in a day %d\n", farting );
+}
+
+
 int askForNumber(const char *message)
 {
     int number;
@@ -31,23 +39,28 @@ int main()
     srand (time(NULL)); // Do not worry about this, but don't delete it
     int age = askForNumber("age");
     
-    int favoriteNumbers[3];
-    askForManyNumbers("your 3 favorite numbers", 3, favoriteNumbers);
+    
+    int farting;
+    int farts = farts_a_day( farting );
+    farts_a_day( farts );
+    
+    int favoriteNumbers[4];
+    askForManyNumbers("your 4 favorite numbers", 4, favoriteNumbers );
     
     printf("Your age is: %d\n", age);
-    printf("Your 3 favorite numbers are %d %d %d\n", favoriteNumbers[0], favoriteNumbers[1], favoriteNumbers[2]);
+    printf("Your 4 favorite numbers are %d %d %d %d\n", favoriteNumbers[0], favoriteNumbers[1], favoriteNumbers[2], favoriteNumbers[3]);
     
-    int added = favoriteNumbers[0] + favoriteNumbers[1] + favoriteNumbers[2];
-    int substracted = favoriteNumbers[0] - favoriteNumbers[1] - favoriteNumbers[2];
-    int multiplied = favoriteNumbers[0] * favoriteNumbers[1] * favoriteNumbers[2];
-    int divided = favoriteNumbers[0] / favoriteNumbers[1] / favoriteNumbers[2];
+    int added = favoriteNumbers[0] + favoriteNumbers[1] + favoriteNumbers[2] + favoriteNumbers[3];
+    int substracted = favoriteNumbers[0] - favoriteNumbers[1] - favoriteNumbers[2] - favoriteNumbers[3];
+    int multiplied = favoriteNumbers[0] * favoriteNumbers[1] * favoriteNumbers[2] * favoriteNumbers[3];
+    int divided = favoriteNumbers[0] / favoriteNumbers[1] / favoriteNumbers[2] / favoriteNumbers[3];
     
     printResult("added", added);
     printResult("substracted", substracted);
     printResult("multiplied", multiplied);
     printResult("divided", divided);
     
-    int randomFavoriteNumber = favoriteNumbers[rand() % 3];
+    int randomFavoriteNumber = favoriteNumbers[rand() % 4];
     printf("From your favorite numbers, the next lucky one is: %d\n", randomFavoriteNumber);
     printf("If you play the lottery, use the number %d\n", randomFavoriteNumber * age);
     
