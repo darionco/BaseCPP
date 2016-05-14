@@ -2,10 +2,17 @@
 #include <stdlib.h>
 #include <time.h> 
 
+int sibblings( int sis )
+{
+    printf (" How many siblings do you have?\n -> ");
+    scanf ("%d", &sis);
+    printf (" you have %d siblings\n", sis );
+}
+
 int farts_a_day( int farting )
 {
     printf ("How many times do you fart in a day?\n-> ");
-    scanf ("%d", farting);
+    scanf ("%d", &farting);
    printf (" This is how many times you fart in a day %d\n", farting );
 }
 
@@ -41,9 +48,13 @@ int main()
     
     
     int farting;
-    int farts = farts_a_day( farting );
+    int farts;
     farts_a_day( farts );
     
+    int sis;
+    int bro;
+    sibblings( bro );
+        
     int favoriteNumbers[4];
     askForManyNumbers("your 4 favorite numbers", 4, favoriteNumbers );
     
