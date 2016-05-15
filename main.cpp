@@ -5,8 +5,8 @@
 int importantmemorys(const char *hardness, int many, int *memory)
 {   
     int more;
-    printf("Please type %s \n", hardness);
-    for (int c = 0; c <many; ++c);
+    printf("Please type %s \n", hardness); //NOT WORKING... AT ALL!!!
+    for (int c = 0; c <many; ++c)
     {
         printf("-> ");
         scanf("%d", &more);
