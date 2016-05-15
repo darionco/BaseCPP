@@ -32,7 +32,7 @@ int askForNumber(const char *message)
     return number;
 }
 
-void askForManyNumbers(const char *message, int howMany, int *numbers)
+int askForManyNumbers(const char *message, int howMany, int *numbers)
 {
     printf("Please type %s:\n", message);
     for (int i = 0; i < howMany; ++i)
@@ -42,9 +42,10 @@ void askForManyNumbers(const char *message, int howMany, int *numbers)
     }
 }
 
-void printResult(const char *type, int number)
+int printResult(const char *type, int number)
 {
-    printf("Your numbers %s are equal to: %d\n", type, number);
+
+     printf("Your numbers %s are equal to: %d\n", type, number);
 }
 
 int main()
@@ -52,16 +53,15 @@ int main()
     srand (time(NULL)); // Do not worry about this, but don't delete it
     int age = askForNumber("how many siblings you have");
     int funny = askforfarts("about how many farts you have a day");
-    
-    int importantmoments [3];
-    importantmemorys("your age when 3 special moments happend", 3, importantmoments);
-    
+        
     int favoriteNumbers[4];
     askForManyNumbers("your 4 favorite numbers", 4, favoriteNumbers);
     
+    int importantmoments[3];
+    importantmemorys("3 ages of an important time in your life", 3, importantmoments);
+    
     printf("You have %d siblings\n", age);
-    printf("You have about %d farts a day\n", funny);
-    printf("Your age when 3 special moments happend is %d, %d and %d\n", importantmoments[0], importantmoments[1], importantmoments[2]);
+    printf("Your age when 3 special moments happend is %d, %d and %d\n", favoriteNumbers[0], favoriteNumbers[1], favoriteNumbers[2]);
     printf("Your 4 favorite numbers are %d, %d, %d and %d\n", favoriteNumbers[0], favoriteNumbers[1], favoriteNumbers[2], favoriteNumbers[3]);
     
     int added = favoriteNumbers[0] + favoriteNumbers[1] + favoriteNumbers[2] + favoriteNumbers[3];
