@@ -2,6 +2,18 @@
 #include <stdlib.h>
 #include <time.h> 
 
+int moment_Age( int baby, int young, int adult )
+{
+    printf ("how old were you in the last 3 important moments?\n");
+    printf (" first number: ");
+    scanf ("%d", &baby);
+    printf (" second number: ");
+    scanf ("%d", &young);
+    printf (" third number: ");
+    scanf ("%d", &adult);
+    printf (" you were %d, %d, and %d in the last 3 important moments\n", baby, young, adult);
+}
+
 int sibblings( int sis )
 {
     printf (" How many siblings do you have?\n -> ");
@@ -54,6 +66,11 @@ int main()
     int sis;
     int bro;
     sibblings( bro );
+    
+    int baby;
+    int young;
+    int adult;
+    moment_Age( baby, young, adult );
         
     int favoriteNumbers[4];
     askForManyNumbers("your 4 favorite numbers", 4, favoriteNumbers );
@@ -74,6 +91,7 @@ int main()
     int randomFavoriteNumber = favoriteNumbers[rand() % 4];
     printf("From your favorite numbers, the next lucky one is: %d\n", randomFavoriteNumber);
     printf("If you play the lottery, use the number %d\n", randomFavoriteNumber * age);
+    printf ("  ");
     
     return 0;
 }
