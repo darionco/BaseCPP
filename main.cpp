@@ -85,7 +85,7 @@ int main()
     int asking_forNumber;
     printf(" Type 1 to add 2 numbers\n");
     printf("type 2 to Multiply 3 numbers\n");
-    printf("Type any other number to see your  lucky number\n");
+    printf("Type any other number from 3 to 9 to see your lucky number\n");
     scanf("%d", &asking_forNumber);
     
     if ( asking_forNumber == 1)
@@ -107,9 +107,24 @@ int main()
         int multiply;
         int multiply2;
         int multiply3;
-        printf(" you chose 2. Type three numbers\n");
-    }
-    
+        printf(" you chose 2. \nType three numbers\n");
+        printf(" firts number: ");
+        scanf("%d", &multiply);
+        printf(" second number: ");
+        scanf("%d",&multiply2);
+        printf(" thrid number: ");
+        scanf("%d", &multiply3);
+        int multiplingResult = multiply * multiply2 * multiply3;
+        printf(" %d x %d x %d = %d\n", multiply, multiply2, multiply3, multiplingResult);
+    }    
+        else if ( asking_forNumber == 3 || asking_forNumber == 4 || asking_forNumber == 5 || asking_forNumber == 6 || asking_forNumber == 7 || asking_forNumber == 8 || asking_forNumber == 9)
+        
+ {
+     int asking_forNumber;
+     printf(" you typed the number %d", asking_forNumber);
+     int lucky = asking_forNumber * 90;
+     printf(" your next lucky number is %d\n", lucky);
+ }
     
     return 0;
 }
