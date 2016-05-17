@@ -75,11 +75,11 @@ int main()
     printResult("divided", divided);
     
     int randomFavoriteNumber = favoriteNumbers[rand() % 4];
-    printf("(This is really funny, don't really do any of these, they are just for fun!)\nFrom your favorite numbers, the next lucky one is: %d\n", randomFavoriteNumber);
+    printf("(These are really funny, don't really do any of these, they are just for fun!)\nFrom your favorite numbers, the next lucky one is: %d\n", randomFavoriteNumber);
     printf("If you play the lottery, use the number %d\n", randomFavoriteNumber * age);
     printf("If your friends ask you to pick a number in between 1 and 1000, use %d\n", randomFavoriteNumber * added);
-    printf("If your playing man hunt and your friend is playing eechi peachi, they pick you, count clock-wise around everyone this many times, %d\n", randomFavoriteNumber + multiplied);
-    printf("if you need to tell someone in 20 years, how old will you be, say your %d!\n", randomFavoriteNumber + substracted);
+    printf("If you have a cold, say you had the cold for %d days now!\n(it will be really funny)\n", multiplied - randomFavoriteNumber);
+    printf("if somemone asked you in 20 years, how old will you be, say your %d!\n(take out the - if you have it, so it sounds more relistic.)\n", randomFavoriteNumber / substracted);
     
     return 0;
 }
