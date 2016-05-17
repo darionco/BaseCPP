@@ -2,98 +2,85 @@
 #include <stdlib.h>
 #include <time.h> 
 
-int moment_Age( int baby, int young, int adult )
-{
-    printf ("how old were you in the last 3 important moments?\n");
-    printf (" first number: ");
-    scanf ("%d", &baby);
-    printf (" second number: ");
-    scanf ("%d", &young);
-    printf (" third number: ");
-    scanf ("%d", &adult);
-    printf (" you were %d, %d, and %d in the last 3 important moments\n", baby, young, adult);
-}
-
-int sibblings( int sis )
-{
-    printf (" How many siblings do you have?\n -> ");
-    scanf ("%d", &sis);
-    printf (" you have %d siblings\n", sis );
-}
-
-int farts_a_day( int farting )
-{
-    printf ("How many times do you fart in a day?\n-> ");
-    scanf ("%d", &farting);
-   printf (" This is how many times you fart in a day %d\n", farting );
-}
-
-
-int askForNumber(const char *message)
-{
-    int number;
-    printf("Please type your %s:\n", message);
-    printf("-> ");
-    scanf("%d", &number);
-    return number;
-}
-
-void askForManyNumbers(const char *message, int howMany, int *numbers)
-{
-    printf("Please type %s:\n", message);
-    for (int i = 0; i < howMany; ++i)
-    {
-        printf("-> ");
-        scanf("%d", &numbers[i]);
-    }
-}
-
-void printResult(const char *type, int number)
-{
-    printf("Your numbers %s are equal to: %d\n", type, number);
-}
-
 int main()
 {
-    srand (time(NULL)); // Do not worry about this, but don't delete it
-    int age = askForNumber("age");
+    // if (condition) {}
+    // for (initial; condition; increment) {}
+    
+    int a = 5; // we are making a hold a number value
+    if (a < 5) // if a (which is equal to a number) is smaller than 5 then do the things in the following scope:
+    {
+        printf("a is smaller than five!\n"); // print ... blah!
+    }
+    else if (a == 5) // else if a is not smaller than five but it is equal to five do the things in the following scope:
+    {
+        printf("a is equal to five!\n"); // print... blah!
+    }
+    else // else if a is not smaller than five and is not equal to five, do the things in the following scope:
+    {
+        printf("a is larger than five!\n"); // print... blah!
+    }
     
     
-    int farting;
-    int farts;
-    farts_a_day( farts );
+    if (a > 3 && a < 6) // if a is bigger than 3 and (&& <-- that's how you say "and" in programming) a is less than 6 do the things in the following scope:
+    {
+        printf("a is between 3 and 6!\n"); // print... blah!
+    }
+    else if (a >= 10) // if a is not more than 3 and it is not smaller than six but it is more than or equal to 10, do the things in the following scope:
+    {
+        printf("a has more than one digit!\n"); // print... blah!
+    }
+    else // anything else, just do the things in the following scope:
+    {
+        printf("a is boring...\n"); // print... blah!
+    }
     
-    int sis;
-    int bro;
-    sibblings( bro );
     
-    int baby;
-    int young;
-    int adult;
-    moment_Age( baby, young, adult );
-        
-    int favoriteNumbers[4];
-    askForManyNumbers("your 4 favorite numbers", 4, favoriteNumbers );
+    if (a == 6 || a == 3 || a == 9) // if a is equal to six or (|| <-- that's how you write "or" in programming) is equal to 3 or it is equal to 9, do the things in the following scope:
+    {
+        printf("a is a multplie of 3!\n"); // print... blah!
+    }
+    else if (a != 5) // otherwise, if a is not (! <-- that's how you write "not" in programming) equal to five, do the things in the following scope:
+    {
+        printf("a is not equal to five!\n"); // print... blah!
+    }
+    else if (a == 10) // otherwise, if a is equal to 10, do the things in the following scope:
+    {
+        printf("wow a, wow...\n"); // print... blah!
+    }
     
-    printf("Your age is: %d\n", age);
-    printf("Your 4 favorite numbers are %d %d %d %d\n", favoriteNumbers[0], favoriteNumbers[1], favoriteNumbers[2], favoriteNumbers[3]);
+    if (!(a > 5 && a == 10)) // if not condition = if (!(condition))
+    {
+        printf("a is not more than five and is not equal to ten!\n");
+    }
     
-    int added = favoriteNumbers[0] + favoriteNumbers[1] + favoriteNumbers[2] + favoriteNumbers[3];
-    int substracted = favoriteNumbers[0] - favoriteNumbers[1] - favoriteNumbers[2] - favoriteNumbers[3];
-    int multiplied = favoriteNumbers[0] * favoriteNumbers[1] * favoriteNumbers[2] * favoriteNumbers[3];
-    int divided = favoriteNumbers[0] / favoriteNumbers[1] / favoriteNumbers[2] / favoriteNumbers[3];
-    int multipliedAndAdded = favoriteNumbers[0] * favoriteNumbers[2] * favoriteNumbers[3] + favoriteNumbers[1];
+    bool condition = (a == 5); // bool = boolean can be true or false
+    if (condition)
+    {
+        printf("a is equal to five!\n");
+    }
     
-    printResult("added", added);
-    printResult("substracted", substracted);
-    printResult("multiplied", multiplied);
-    printResult("divided", divided);
-    printResult(" multiplied and added", multipliedAndAdded);
+    bool dario = true;
+    bool selene = false;
+    bool isCool = true;
+    if (dario == isCool)
+    {
+        printf("Dario is super cool!\n");
+    }
+    else
+    {
+        printf("Dario is not cool!\n");
+    }
     
-    int randomFavoriteNumber = favoriteNumbers[rand() % 4];
-    printf("From your favorite numbers, the next lucky one is: %d\n", randomFavoriteNumber);
-    printf("If you play the lottery, use the number %d\n", randomFavoriteNumber * age);
-    printf ("I will guess the favourite number you prefer the most out of your four favourite numbers: %d\n", randomFavoriteNumber);
+    if (selene == isCool)
+    {
+        printf("Selene is super cool!\n");
+    }
+    else
+    {
+        printf("Selene is not cool, Dario is in trouble :(\n");
+    }
+    
     
     return 0;
 }
