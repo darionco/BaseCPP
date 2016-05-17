@@ -82,5 +82,34 @@ int main()
     }
     
     
+    int asking_forNumber;
+    printf(" Type 1 to add 2 numbers\n");
+    printf("type 2 to Multiply 3 numbers\n");
+    printf("Type any other number to see your  lucky number\n");
+    scanf("%d", &asking_forNumber);
+    
+    if ( asking_forNumber == 1)
+    {
+        int add;
+        int add2;
+        printf("Choose 2 numbers\n");
+        printf(" first number: ");
+        scanf("%d", &add);
+        printf(" second number: ");
+        scanf("%d", &add2);
+        int addingResult = add + add2;
+        printf(" %d + %d = %d\n", add, add2, addingResult);
+        
+    }
+    
+    else if ( asking_forNumber == 2)
+    {
+        int multiply;
+        int multiply2;
+        int multiply3;
+        printf(" you chose 2. Type three numbers\n");
+    }
+    
+    
     return 0;
 }
