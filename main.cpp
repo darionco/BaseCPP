@@ -82,16 +82,18 @@ int main()
     int substracted = favoriteNumbers[0] - favoriteNumbers[1] - favoriteNumbers[2] - favoriteNumbers[3];
     int multiplied = favoriteNumbers[0] * favoriteNumbers[1] * favoriteNumbers[2] * favoriteNumbers[3];
     int divided = favoriteNumbers[0] / favoriteNumbers[1] / favoriteNumbers[2] / favoriteNumbers[3];
+    int multipliedAndAdded = favoriteNumbers[0] * favoriteNumbers[2] * favoriteNumbers[3] + favoriteNumbers[1];
     
     printResult("added", added);
     printResult("substracted", substracted);
     printResult("multiplied", multiplied);
     printResult("divided", divided);
+    printResult(" multiplied and added", multipliedAndAdded);
     
     int randomFavoriteNumber = favoriteNumbers[rand() % 4];
     printf("From your favorite numbers, the next lucky one is: %d\n", randomFavoriteNumber);
     printf("If you play the lottery, use the number %d\n", randomFavoriteNumber * age);
-    printf ("  ");
+    printf ("I will guess the favourite number you prefer the most out of your four favourite numbers: %d\n", randomFavoriteNumber);
     
     return 0;
 }
