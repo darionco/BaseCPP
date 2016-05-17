@@ -81,6 +81,32 @@ int main()
         printf("Selene is not cool, Dario is in trouble :(\n");
     }
     
+    int homework;
+    printf("type 1 to add 2 numbers,\n ");
+    printf("type 2 to multiply 3 numbers and \n");
+    printf("type any other number to see your lucky number!\n");
+    scanf("%d", &homework);
+    if(homework == 1)
+    {   
+        int awesomeness;
+        int peopleROCK;
+        printf("you typed 1, i am now going to add, please type 2 numbers\n");
+        scanf("%d", &awesomeness);
+        scanf("%d", &peopleROCK);
+        printf("now, time to add!\n");
+        int Result = awesomeness + peopleROCK;
+        printf("%d + %d = %d\n", awesomeness, peopleROCK, Result);
+    }   
+    else if(homework == 2)
+    {   
+        int minecraft;
+        int games;
+        int run;
+        printf("you typed 2, now i will multiply!\n");
+        printf("please type 3 numbers(try making them small)\n");
+        scanf("%d", &minecraft);
+        
+    }
     
     return 0;
 }
