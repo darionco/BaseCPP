@@ -117,12 +117,14 @@ int main()
         int multiplingResult = multiply * multiply2 * multiply3;
         printf(" %d x %d x %d = %d\n", multiply, multiply2, multiply3, multiplingResult);
     }    
+    
         else if ( asking_forNumber == 3 || asking_forNumber == 4 || asking_forNumber == 5 || asking_forNumber == 6 || asking_forNumber == 7 || asking_forNumber == 8 || asking_forNumber == 9)
-        
  {
-     int asking_forNumber;
-     printf(" you typed the number %d", asking_forNumber);
-     int lucky = asking_forNumber * 90;
+     int previous;
+     printf(" what number did you previously type? ");
+     printf(" previous number: ");
+     scanf("%d", &previous);
+     int lucky = previous * 50;
      printf(" your next lucky number is %d\n", lucky);
  }
     
