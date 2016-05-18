@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h> 
+#include <time.h>
 
-int randomness(int guessing, int favesomething, int number)
+int randomawsomeness(int guessing, int favesomething, int number)
 {
-        srand (time(NULL));
-        printf("You picked a number that is not 1 or 2! i will guess your most favorite number!\nPlease type your 3 favorite numbers\n");
-        scanf("%d", &number);
-        scanf("%d", &favesomething);
-        scanf("%d", &guessing);
-        printf("Great! now out of those 3 numbers, i will guess witch one is your favorite!\n");
-        return 0;
+    printf("You chose something that is not 1 or 2, now i will tell you your favorite number!\nPlease type your 3 favorite numbers");
+    scanf("%d", &guessing);
+    scanf("%d", &favesomething);
+    scanf("%d", &number);
+    printf("Great! now i will predict your favorite number out of those 3 numbers");
+    //THIS HAS FAILED... IT IS NIGHT... I GIVE UP... UNTILL TOMORROW!!!
+    return 0;
 }
 
 int main()
@@ -124,8 +124,9 @@ int main()
     }
     else
     {   
-        int randomFavoriteNumber = randomness[rand() % 3];
-        printf("I will guess your favorite number of those 3 numbers is: ");
+        int randompersons[3];
+        int randomname = randomawsomeness[rand() % 3];
+        int number, favesomething, guessing;
     }
     
     return 0;
