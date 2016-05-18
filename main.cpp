@@ -2,6 +2,17 @@
 #include <stdlib.h>
 #include <time.h> 
 
+int randomness(int guessing, int favesomething, int number)
+{
+        srand (time(NULL));
+        printf("You picked a number that is not 1 or 2! i will guess your most favorite number!\nPlease type your 3 favorite numbers\n");
+        scanf("%d", &number);
+        scanf("%d", &favesomething);
+        scanf("%d", &guessing);
+        printf("Great! now out of those 3 numbers, i will guess witch one is your favorite!\n");
+        return 0;
+}
+
 int main()
 {
     // if (condition) {}
@@ -102,10 +113,19 @@ int main()
         int minecraft;
         int games;
         int run;
+        int Result;
         printf("you typed 2, now i will multiply!\n");
         printf("please type 3 numbers(try making them small)\n");
+        scanf("%d", &games);
+        scanf("%d", &run);
         scanf("%d", &minecraft);
-        
+        Result = games * run * minecraft;
+        printf("time to add!\n%d x %d x %d = %d", games, run, minecraft, Result);
+    }
+    else
+    {   
+        int randomFavoriteNumber = randomness[rand() % 3];
+        printf("I will guess your favorite number of those 3 numbers is: ");
     }
     
     return 0;
