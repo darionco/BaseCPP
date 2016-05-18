@@ -120,11 +120,11 @@ int main()
     
         else if ( asking_forNumber == 3 || asking_forNumber == 4 || asking_forNumber == 5 || asking_forNumber == 6 || asking_forNumber == 7 || asking_forNumber == 8 || asking_forNumber == 9)
  {
-     int previous;
-     printf(" what number did you previously type? ");
-     printf(" previous number: ");
-     scanf("%d", &previous);
-     int lucky = previous * 50;
+     int random;
+     printf(" type a random number: ");
+     scanf("%d", &random);
+     int lucky = random * 50 + 10 - 5;
+     printf(" your random number is: %d\n", random);
      printf(" your next lucky number is %d\n", lucky);
  }
     
