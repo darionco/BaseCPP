@@ -1,132 +1,60 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h> 
+#include <time.h>
+#include <unistd.h>
 
 int main()
 {
-    // if (condition) {}
-    // for (initial; condition; increment) {}
+    // seed the random number generator... but whats that daddy?? ... ... ... JUST DO IT!
+    srand(time(NULL)); // this makes it so your random numbers are NOT always the same.
     
-    int a = 5; // we are making a hold a number value
-    if (a < 5) // if a (which is equal to a number) is smaller than 5 then do the things in the following scope:
-    {
-        printf("a is smaller than five!\n"); // print ... blah!
-    }
-    else if (a == 5) // else if a is not smaller than five but it is equal to five do the things in the following scope:
-    {
-        printf("a is equal to five!\n"); // print... blah!
-    }
-    else // else if a is not smaller than five and is not equal to five, do the things in the following scope:
-    {
-        printf("a is larger than five!\n"); // print... blah!
-    }
+    // ask for strings! (or boys names)
+    char name[100];
     
+    printf("Please type the name of your dad: ");
+    scanf("%s", name);
     
-    if (a > 3 && a < 6) // if a is bigger than 3 and (&& <-- that's how you say "and" in programming) a is less than 6 do the things in the following scope:
-    {
-        printf("a is between 3 and 6!\n"); // print... blah!
-    }
-    else if (a >= 10) // if a is not more than 3 and it is not smaller than six but it is more than or equal to 10, do the things in the following scope:
-    {
-        printf("a has more than one digit!\n"); // print... blah!
-    }
-    else // anything else, just do the things in the following scope:
-    {
-        printf("a is boring...\n"); // print... blah!
-    }
+    printf("The first letter of your dad's name is \"%c\"\n", name[0]);
+    printf("And the whole name is \"%s\"\n", name);
     
+    char places[3][100];
+    printf("Please enter the name of three places you like:\n");
+    printf("> ");
+    scanf("%s", places[0]);
+    printf("> ");
+    scanf("%s", places[1]);
+    printf("> ");
+    scanf("%s", places[2]);
     
-    if (a == 6 || a == 3 || a == 9) // if a is equal to six or (|| <-- that's how you write "or" in programming) is equal to 3 or it is equal to 9, do the things in the following scope:
+    printf("The place in the middle is \"%s\"\n", places[1]);
+    printf("And a random place you like is \"%s\"\n", places[rand() % 3]);
+    
+    int numberOfBoys;
+    printf("How many boys do you like?\n");
+    printf("> ");
+    scanf("%d", &numberOfBoys);
+    
+    char boyNames[numberOfBoys][100];
+    for (int i = 0; i < numberOfBoys; ++i)
     {
-        printf("a is a multplie of 3!\n"); // print... blah!
-    }
-    else if (a != 5) // otherwise, if a is not (! <-- that's how you write "not" in programming) equal to five, do the things in the following scope:
-    {
-        printf("a is not equal to five!\n"); // print... blah!
-    }
-    else if (a == 10) // otherwise, if a is equal to 10, do the things in the following scope:
-    {
-        printf("wow a, wow...\n"); // print... blah!
+        printf("Type boy name number %d: ", i + 1);
+        scanf("%s", boyNames[i]);
     }
     
-    if (!(a > 5 && a == 10)) // if not condition = if (!(condition))
+    printf("You are going to marry...\n");
+    for (int i = 0; i < 5; ++i)
     {
-        printf("a is not more than five and is not equal to ten!\n");
+        sleep(1);
+        printf("Calculating...\n");
     }
     
-    bool condition = (a == 5); // bool = boolean can be true or false
-    if (condition)
-    {
-        printf("a is equal to five!\n");
-    }
+    printf("%s!!!!!!\n", boyNames[rand() % numberOfBoys]);
     
-    bool dario = true;
-    bool selene = false;
-    bool isCool = true;
-    if (dario == isCool)
-    {
-        printf("Dario is super cool!\n");
-    }
-    else
-    {
-        printf("Dario is not cool!\n");
-    }
+    // HOMEWORK
+    // Make this program so it doesn't print anything until the end, and it will print:
+    // you are going to marry (random boy name here) in (random place name here) and (dad name here) is not going to like it!
     
-    if (selene == isCool)
-    {
-        printf("Selene is super cool!\n");
-    }
-    else
-    {
-        printf("Selene is not cool, Dario is in trouble :(\n");
-    }
-    
-    
-    int asking_forNumber;
-    printf(" Type 1 to add 2 numbers\n");
-    printf("type 2 to Multiply 3 numbers\n");
-    printf("Type any other number to see your lucky number\n");
-    scanf("%d", &asking_forNumber);
-    
-    if ( asking_forNumber == 1)
-    {
-        int add;
-        int add2;
-        printf("Choose 2 numbers\n");
-        printf(" first number: ");
-        scanf("%d", &add);
-        printf(" second number: ");
-        scanf("%d", &add2);
-        int addingResult = add + add2;
-        printf(" %d + %d = %d\n", add, add2, addingResult);
-        
-    }
-    
-    else if ( asking_forNumber == 2)
-    {
-        int multiply;
-        int multiply2;
-        int multiply3;
-        printf(" you chose 2. \nType three numbers\n");
-        printf(" firts number: ");
-        scanf("%d", &multiply);
-        printf(" second number: ");
-        scanf("%d",&multiply2);
-        printf(" thrid number: ");
-        scanf("%d", &multiply3);
-        int multiplingResult = multiply * multiply2 * multiply3;
-        printf(" %d x %d x %d = %d\n", multiply, multiply2, multiply3, multiplingResult);
-    }    
-    
-        else
- {
-     int random;
-     printf(" type a random number: ");
-     scanf("%d", &random);
-     int lucky = random * 55;
-     printf(" your random number is: %d\n", random);
-     printf(" your next lucky number is %d\n", lucky);
- }
+    // Bonus points, make it so the dad randomly likes it or not.
     
     return 0;
 }
