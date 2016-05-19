@@ -2,22 +2,22 @@
 #include <stdlib.h>
 #include <time.h>
 
-int randomawsomeness(int guessing, int favesomething, int number)
+void randomawsomeness(int *guessing)
 {
-    printf("You chose something that is not 1 or 2, now i will tell you your favorite number!\nPlease type your 3 favorite numbers");
-    scanf("%d", &guessing);
-    scanf("%d", &favesomething);
-    scanf("%d", &number);
-    printf("Great! now i will predict your favorite number out of those 3 numbers");
-    //THIS HAS FAILED... IT IS NIGHT... I GIVE UP... UNTILL TOMORROW!!!
-    return 0;
+    printf("You chose something that is not 1 or 2, now i will tell you your favorite number!\nPlease type your 3 favorite numbers\n");
+    scanf("%d", &guessing[0]);
+    scanf("%d", &guessing[1]);
+    scanf("%d", &guessing[2]);
+    printf("Great! now i will predict your favorite number out of those 3 numbers\n");
+    //THIS HAS FAILED... I GIVE UP... THERE IS NO WAY I WILL FIND OUT THE ANSWER TO THIS RIGHT NOW... I GIVE UP!!!
+    // DADDY FIXED IT FOR ME! YAY!
 }
 
 int main()
 {
+    srand (time(NULL)); 
     // if (condition) {}
     // for (initial; condition; increment) {}
-    
     int a = 5; // we are making a hold a number value
     if (a < 5) // if a (which is equal to a number) is smaller than 5 then do the things in the following scope:
     {
@@ -120,13 +120,13 @@ int main()
         scanf("%d", &run);
         scanf("%d", &minecraft);
         Result = games * run * minecraft;
-        printf("time to add!\n%d x %d x %d = %d", games, run, minecraft, Result);
+        printf("time to add!\n%d x %d x %d = %d\n", games, run, minecraft, Result);
     }
     else
     {   
         int randompersons[3];
-        int randomname = randomawsomeness[rand() % 3];
-        int number, favesomething, guessing;
+        randomawsomeness(randompersons);
+        printf("Your favourite favourite ultra favourite number is: %d\n", randompersons[rand() % 3]);
     }
     
     return 0;
