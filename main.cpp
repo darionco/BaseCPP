@@ -15,12 +15,6 @@ int main()
     scanf("%d", personsrules);
     printf("Thank you. I will put this number to good use.");
     
-    char replacement;
-    if(personsrules == 0||personsrules == 2||personsrules == 4||personsrules == 6||personsrules == 8||personsrules == 10)
-{
-    
-}
-    
     char name[100];
     
     printf("Please type the name of your dad: ");
@@ -55,11 +49,7 @@ int main()
     }
     
     printf("%s!!!!!!\n", boyNames[rand() % numberOfBoys]);
-    printf("%s Is %s going to like it\n", name, replacement);
-    printf("The first letter of your dad's name is \"%c\"\n", name[0]);
-    printf("And the whole name is \"%s\"\n", name);
-    printf("The place in the middle is \"%s\"\n", places[1]);
-    printf("And a random place you like is \"%s\"\n", places[rand() % 3]);
+    printf("you are going to marry %s, you will live in %s and %s is not going to like it\n", boyNames[rand() % numberOfBoys], places[rand() % 3], name);
     // HOMEWORK
     // Make this program so it doesn't print anything until the end, and it will print:
     // you are going to marry (random boy name here) in (random place name here) and (dad name here) is not going to like it!
